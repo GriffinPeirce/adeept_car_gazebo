@@ -1,0 +1,7 @@
+<launch>
+	<param name="robot_description" textfile="$(find adeept_car_description)/urdf/adeept_car.urdf"/>
+	<node name = "robot_state_publisher" pkg = "robot_state_publisher" type = "state_publisher"/>
+	<node name = "joint_state_publisher" pkg = "joint_state_publisher" type = "joint_state_publisher">
+		<param name="use_gui" value="True"/>
+	</node>
+</launch>
